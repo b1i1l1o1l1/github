@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: myanime 1s infinite;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.container:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.container:nth-child(2)>.box {
+    width: 90px;
+    height: 90px;
+}
+
+.container:nth-child(3)>.box {
+    width: 80px;
+    height: 80px;
+}
+
+.container:nth-child(4)>.box {
+    width: 70px;
+    height: 70px;
+}
+
+.container:nth-child(5)>.box {
+    width: 60px;
+    height: 60px;
+}
+
+.container:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.container:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.container:nth-child(5) {
+    animation-delay: .4s;
+}
+
+
+
+@keyframes myanime {
+    0%{
+        transform: rotate(45deg);
+    }
+
+    100%{
+        transform: rotate(405deg);
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+}
